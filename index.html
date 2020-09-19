@@ -6,24 +6,35 @@
 	<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
 </head>
 <body>
+	<div class="menu">
+		<ul>
+			<li><a href="#banner" onclick="togglemenu();">Home</a></li>
+			<li><a href="#about" onclick="togglemenu();">About</a></li>
+			<li><a href="#team" onclick="togglemenu();">Team</a></li>
+			<li><a href="#contact" onclick="togglemenu();">Contact</a></li>
+		</ul>
+	</div>
 	<section class="banner">
 	<header>
 		<h2 class="logo">DrowsyRide</h2>
-		<div class="toggle"></div>
+		<div class="toggle" onclick="togglemenu();"></div>
 	</header>
 	<video src="./drowsy.mp4" muted loop autoplay></video>
 	<div class="overlay"></div>
 	<div class="text">
 		<h2>Drive safe,</h2>
 		<h3>because we care.</h3>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<p>Feeling tired and sleepy is ok, but while driving? That's a big risk. Being on road its all about focus, but sometimes that too is lost when one's worn out. With <b>DrowsyRide&trade;</b> advanced technology, it warms the driver with an alarm sound when he's feeling drowsy or taking too much yawn. One alert can save the rest of your life.</p>
 		<a href="https://github.com/ShobhitRathi">Check it out</a>
 	</div>
 	</section>
+	<script type="text/javascript">
+		function togglemenu(){
+			var menuToggle = document.querySelector('.toggle');
+			var banner = document.querySelector('.banner');
+			menuToggle.classList.toggle('active');
+			banner.classList.toggle('active');
+		}
+	</script>
 </body>
 </html>

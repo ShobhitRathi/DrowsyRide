@@ -20,6 +20,10 @@ section {
 	transition: 0.5s;
 }
 
+.banner.active {
+	right: 300px;
+}
+
 header {
 	position: absolute;
 	top: 0;
@@ -45,6 +49,14 @@ header .logo {
 	background: url(./images/menu.png);
 	background-repeat: no-repeat;
 	background-size: 30px;
+	background-position: center;
+	cursor: pointer;
+}
+
+.toggle.active {
+	background: url(./images/close.png);
+	background-repeat: no-repeat;
+	background-size: 25px;
 	background-position: center;
 	cursor: pointer;
 }
@@ -109,4 +121,49 @@ section video {
 	font-weight: 500;
 	margin-top: 10px;
 	color: #111;
+	letter-spacing: 2px;
+}
+
+.menu {
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 300px;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #fff;
+}
+
+.menu ul {
+	position: relative;
+}
+
+.menu ul li {
+	position: relative;
+	list-style: none;
+	text-align: center;
+	margin-top: 5px;
+}
+
+.menu ul li a {
+	text-decoration: none;
+	font-size: 24px;
+	color: #111;
+}
+
+@media (max-width: 991px) {
+	section ,
+	section header {
+		padding: 40px
+	}
+
+	.text h2 {
+		font-size: 3em;
+	}
+
+	.text h3 {
+		font-size: 2em;
+	}
 }
