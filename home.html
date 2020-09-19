@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<link rel="stylesheet" type="text/css" href="./sideline.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+</head>
+<body>
+
+<div class="about">
+	<div class="midtext">
+		<h2>About Us.</h2>
+		<p>Whether it’s due to medication, a sleep disorder or a poor night’s rest, new research points to the risks and potential dangers of drowsy driving. Missing one to two hours of the recommended seven hours of sleep a night nearly doubles the risk of a car accident. Sleepiness can come without warning, so drivers should prioritize getting enough sleep and avoid driving when they are fatigued.<br><br>
+		DrowsyRide helps protecting the driver with an alarm sound when he's feeling drowsy or taking too much yawn. It uses advanced Machine Learning and Facial Recognition using various libraries which can tell and keep track when a person is even blinking. This idea was started by a group of 4 developers who came together.
+		</p>
+	</div>
+	<div class="world">
+	<img src="./images/world.png" width="800px" align="right"></div>
+</div>
+
+	<div class="container">
+		<div class="box">
+			<div class="chart" data-percent="73">73%</div>
+			<h2>Drinking</h2>
+		</div>
+		<div class="box">
+			<div class="chart" data-percent="62">62%</div>
+			<h2>Mobile distract</h2>
+		</div>
+		<div class="box">
+			<div class="chart" data-percent="91">91%</div>
+			<h2>Drowsiness</h2>
+		</div>
+		<div class="box">
+			<div class="chart" data-percent="43">43%</div>
+			<h2>Road Rage</h2>
+		</div>
+		<div class="end"><h3> Below this shows the data of how much people die in vehicles and by what cause per year</h3>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+	<script src="jquery.easypiechart.js"></script>
+	<script>
+	    $(function() {
+	        $('.chart').easyPieChart({
+	            size: 160,
+	            barColor: '#047de0',
+	            scaleColor: false,
+	            lineWidth: 15,
+	            trackColor: '#373737',
+	            lineCap: 'cicle',
+	            animate: 2000,
+	        });
+	    });
+	</script>
+
+
+
+</body>
+</html>
