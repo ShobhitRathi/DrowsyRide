@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: #232733;
+}
+
+.midtext h2 {
+	font-weight: 700;
+	font-size: 5em;
+	top: 0;
+	left: 0;
+	padding-top: 100px;
+	padding-left: 60px;
+	color: #fff;
+}
+
+.midtext p {
+	top: 0;
+	left: 0;
+	width: 70%;
+	padding-left: 60px;
+	color: #fff;
+	font-weight: 400;
+	line-height: 1.7em;
+}
+
+.world {
+	top: 0;
+	right: 0;
+	margin-top: -400px;
+	opacity: 0.5;
+}
+
+.container {
+	position: absolute;
+	top:90%;
+	left: 47%;
+	transform: translate(-50%,-50%);
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	align-items: center;
+	align-content: center;
+}
+
+.container .box {
+	width: 25%;
+	float: left;
+}
+
+.container .box h2 {
+	color: #fff;
+	font-weight: 400;
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+
+.container .box .chart {
+	position: relative;
+	width: 120px;
+	height: 140px;
+	text-align: center;
+	margin: 0 auto;
+	font-size: 30px;
+	color: #fff;
+	line-height: 120px;
+}
+
+.container .box canvas {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.end h3 {
+	text-align: center;
+	color: #fff;
+	font-weight: 200;
+	text-transform: uppercase;
+	font-size: 1em;
+}
+
+.functioning {
+	margin-top: 120vh;
+}
+
+.functioning h2 {
+	text-align: right;
+	padding-right: 100px;
+	font-size: 5em;
+	color: #fff;
+}
+
+.functioning p {
+	position: relative;
+	float: right;
+	width: 80%;
+	padding-top: 40px;
+	padding-right: 80px;
+	color: #fff;
+	text-align: right;
+	line-height: 1.7em;
+}
+
+.team {
+	margin-top: 60vh;
+}
+
+.team h2 {
+	font-size: 5em;
+	text-align: center;
+	align-items: center;
+	color: #fff;
+	letter-spacing: 2px;
+}
+
+.profiles {
+	justify-content: space-around;
+	margin: 20px 100px;
+}
+
+.profile {
+	float: left;
+	width: 50%;
+	padding: 70px;
+}
+
+.profile-img {
+	width: 250px;
+	height: 250px;
+	border-radius: 500px;
+	object-fit: cover;
+}
+
+.user-name {
+	margin-top: 30px;
+	font-size: 35px;
+	color: #fff;
+}
+
+.profile h5 {
+	font-size: 18px;
+	color: #b0b0b0;
+}
+
+.profile p {
+	font-size: 16px;
+	margin-top: 20px;
+	text-align: justify;
+	color: #fff;
+}

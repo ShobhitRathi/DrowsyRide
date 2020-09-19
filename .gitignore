@@ -1,0 +1,6 @@
+.vscode/
+.idea/
+
+pythonenv3.8/
+
+*.sh

@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+	scroll-behavior: smooth;
+}
+
+section {
+	position: absolute;
+	right: 0;
+	width: 100%;
+	min-height: 100vh;
+	padding: 100px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	background: #232733;
+	transition: 0.5s;
+}
+
+.banner.active {
+	right: 300px;
+}
+
+header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 40px 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 1000;
+}
+
+header .logo {
+	color: #fff;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+.toggle {
+	position: relative;
+	width: 60px;
+	height: 60px;
+	background: url(./images/menu.png);
+	background-repeat: no-repeat;
+	background-size: 30px;
+	background-position: center;
+	cursor: pointer;
+}
+
+.toggle.active {
+	background: url(./images/close.png);
+	background-repeat: no-repeat;
+	background-size: 25px;
+	background-position: center;
+	cursor: pointer;
+}
+
+section video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to left, #4271ff, #ff2e4a);
+	mix-blend-mode: overlay;
+}
+
+.text {
+	margin-top: 50px;
+	position: relative;
+	z-index: 10;
+}
+
+.text h2 {
+	font-size: 6em;
+	font-weight: 800;
+	color: #fff;
+	line-height: 1em;
+	text-transform: uppercase;
+}
+
+.text h3 {
+	font-size: 5em;
+	font-weight: 700;
+	color: #fff;
+	line-height: 1em;
+	text-transform: uppercase;
+}
+
+.text p {
+	position: relative;
+	font-size: 1.1em;
+	margin: 20px 0;
+	font-weight: 400;
+	max-width: 750px;
+	color: #fff;
+}
+
+.text a {
+	display: inline-block;
+	font-size: 1.1em;
+	background: #fff;
+	padding: 10px 30px;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: 500;
+	margin-top: 10px;
+	color: #111;
+	letter-spacing: 2px;
+}
+
+.menu {
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 300px;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #fff;
+}
+
+.menu ul {
+	position: relative;
+}
+
+.menu ul li {
+	position: relative;
+	list-style: none;
+	text-align: center;
+	margin-top: 5px;
+}
+
+.menu ul li a {
+	text-decoration: none;
+	font-size: 24px;
+	color: #111;
+}
+
+@media (max-width: 991px) {
+	section ,
+	section header {
+		padding: 40px
+	}
+
+	.text h2 {
+		font-size: 3em;
+	}
+
+	.text h3 {
+		font-size: 2em;
+	}
+}
+
+/*home*/

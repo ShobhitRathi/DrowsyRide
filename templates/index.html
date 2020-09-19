@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DrowsyRide</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+</head>
+<body>
+	<div class="menu">
+		<ul>
+			<li><a href="https://devpost.com/ShobhitRathi" onclick="togglemenu();">Github</a></li>
+			<li><a href="/about#about" onclick="togglemenu();">About</a></li>
+			<li><a href="/about#functioning" onclick="togglemenu();">Product</a></li>
+			<li><a href="/about#team" onclick="togglemenu();">Team</a></li>
+		</ul>
+	</div>
+	<section class="banner" id="banner">
+	<header>
+		<h2 class="logo">DrowsyRide</h2>
+		<div class="toggle" onclick="togglemenu();"></div>
+	</header>
+	<video src="{{ url_for('static', filename='images/drowsy.mp4') }}" muted loop autoplay></video>
+	<div class="overlay"></div>
+	<div class="text">
+		<h2>Drive safe,</h2>
+		<h3>because we care.</h3>
+		<p>Feeling tired and sleepy is ok, but while driving? That's a big risk. Being on road its all about focus, but sometimes that too is lost when one's worn out. With <b>DrowsyRide&trade;</b> advanced technology, it warms the driver with an alarm sound when he's feeling drowsy or taking too much yawn. One alert can save the rest of your life.</p>
+		<form method="post" action="">
+			<input type="submit" value="Start" name="Start" />
+		</form>
+	</div>
+	</section>
+	<script type="text/javascript">
+		function togglemenu(){
+			var menuToggle = document.querySelector('.toggle');
+			var banner = document.querySelector('.banner');
+			menuToggle.classList.toggle('active');
+			banner.classList.toggle('active');
+		}
+	</script>
+</body>
+</html>
