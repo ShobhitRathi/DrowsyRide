@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>DrowsyRide</title>
-	<link rel="stylesheet" type="text/css" href="./main.css">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
@@ -10,10 +10,10 @@
 <body>
 	<div class="menu">
 		<ul>
-			<li><a href="https://devpost.com/ShobhitRathi" onclick="togglemenu();">Github</a></li>
-			<li><a href="./home.html#about" onclick="togglemenu();">About</a></li>
-			<li><a href="./home.html#functioning" onclick="togglemenu();">Product</a></li>
-			<li><a href="./home.html#team" onclick="togglemenu();">Team</a></li>
+			<li><a href="https://github.com/ShobhitRathi/DrowsyRide" onclick="togglemenu();">Github</a></li>
+			<li><a href="/about#about" onclick="togglemenu();">About</a></li>
+			<li><a href="/about#functioning" onclick="togglemenu();">Product</a></li>
+			<li><a href="/about#team" onclick="togglemenu();">Team</a></li>
 		</ul>
 	</div>
 	<section class="banner" id="banner">
@@ -21,13 +21,23 @@
 		<h2 class="logo">DrowsyRide</h2>
 		<div class="toggle" onclick="togglemenu();"></div>
 	</header>
-	<video src="./drowsy.mp4" muted loop autoplay></video>
+	<video src="{{ url_for('static', filename='images/drowsy.mp4') }}" muted loop autoplay></video>
 	<div class="overlay"></div>
 	<div class="text">
 		<h2>Drive safe,</h2>
 		<h3>because we care.</h3>
 		<p>Feeling tired and sleepy is ok, but while driving? That's a big risk. Being on road its all about focus, but sometimes that too is lost when one's worn out. With <b>DrowsyRide&trade;</b> advanced technology, it warms the driver with an alarm sound when he's feeling drowsy or taking too much yawn. One alert can save the rest of your life.</p>
-		<a href="./home.html">Check it out</a>
+		<form method="post" action="">
+			<input type="submit" value="Start" name="Start" style="
+			border: none;
+			background-color: #fff;
+			padding: 15px;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			border-radius: 8px;
+			color: #111;
+			cursor: pointer;"/>
+		</form>
 	</div>
 	</section>
 	<script type="text/javascript">

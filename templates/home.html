@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>Home</title>
-	<link rel="stylesheet" type="text/css" href="./sideline.css">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/sideline.css') }}">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
@@ -17,7 +17,7 @@
 		</p>
 	</div>
 	<div class="world">
-	<img src="./images/world.png" width="800px" align="right"></div>
+	<img src="{{ url_for('static', filename='images/world.png') }}" width="800px" align="right"></div>
 </div>
 
 	<div class="container">
@@ -41,7 +41,7 @@
 		</div>
 	</div>
 	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-	<script src="jquery.easypiechart.js"></script>
+	<script src="{{ url_for('static', filename='js/jquery.easypiechart.js') }}"></script>
 	<script>
 	    $(function() {
 	        $('.chart').easyPieChart({
@@ -59,12 +59,15 @@
 <!--Integrate your webapp from here-->
 <div class="functioning" id="functioning">
 	<h2>The Functioning.</h2>
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-	proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Excepteur sint occaecat cupidatat non.</p>
+	<p>
+		It uses some detection examples from a Data file, and Reads it converts into learning
+		and Then, After cmparing with the face, it stills learn, and start predicting,
+		and increases its accuracy, hence becoming better at it.
+		<br><br>
+		It scans the driver's faces using OpenCV, And then analyses the Eyes, ears, and mouth using haar-cascade alogrithm and finds if the eyelids are closing the eyes, or is he yawning, and Several other minute details to detect drowsiness, which later follows up with an alarm sound that warns / alerts the driver to be cautious.
+		<br><br>
+		The project using the Useful resources, like OPEN CV, and Scipy, along with matplotlib, to plot the rates of drowsiness, and also using dlib , as the scanning resources, along with computer vision and other multiple dependencies.
+	</p>
 </div>
 <!--till here-->
 
@@ -72,7 +75,7 @@
 	<h2>Meet The Team</h2>
 	<div class="profiles">
 		<div class="profile">
-			<img src="./images/shobhit.png" class="profile-img">
+			<img src="{{ url_for('static', filename='images/shobhit.png') }}" class="profile-img">
 			<h3 class="user-name">Shobhit Rathi</h3>
 			<h5>New Delhi, India</h5>
 			<p>17 year old high-school developer, works in frontend development using html, css and javascript. Currently working around with Python scripts and libraries</p>
@@ -80,7 +83,7 @@
 	</div>
 	<div class="profiles">
 		<div class="profile">
-			<img src="./images/sunrit.jpg" class="profile-img">
+			<img src="{{ url_for('static', filename='images/sunrit.jpg') }}" class="profile-img">
 			<h3 class="user-name">Sunrit Jana</h3>
 			<h5>Chennai, India</h5>
 			<p>I am a developer from India, Currently focusing on Python Programming and Javascript for Frontend! And yea, As a student, I have to Juggle Music, Studies, and Coding</p>
@@ -88,7 +91,7 @@
 	</div>
 	<div class="profiles">
 		<div class="profile">
-			<img src="./images/unknown.jpg" class="profile-img">
+			<img src="{{ url_for('static', filename='images/rohith.png') }}" class="profile-img">
 			<h3 class="user-name">Rohith</h3>
 			<h5>Chennai, India</h5>
 			<p>A Python programmer and web-app developer. Currently working and learning about ML and automation</p>
@@ -96,7 +99,7 @@
 	</div>
 	<div class="profiles">
 		<div class="profile">
-			<img src="./images/unknown.jpg" class="profile-img">
+			<img src="{{ url_for('static', filename='images/unknown.jpg') }}" class="profile-img">
 			<h3 class="user-name">Jake Zeiter</h3>
 			<h5>Illinois, USA</h5>
 			<p>Programmer with primary lang Python, comfortable with C and Java. My emphasis is on AI and ML and mathematics</p>
